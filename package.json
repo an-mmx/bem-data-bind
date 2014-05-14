@@ -1,0 +1,33 @@
+{
+    "name": "bem-data-bind",
+    "version": "0.1.1",
+    "description": "",
+    "keywords": [
+        "bem",
+        "bem-dom",
+        "data-bind",
+        "data-binding"
+    ],
+    "author": {
+        "name": "M.D."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/an-mmx/bem-data-bind.git"
+    },
+    "scripts": {
+        "test": "npm install --save-dev && ./tests.sh"
+    },
+    "bundledDependencies": [
+        "inherit",
+        "bem-bl"
+    ],
+    "devDependencies": {
+        "jshint": "*"
+    },
+    "dependencies": {
+        "inherit": "*",
+        "bem-bl": "git://github.com/bem/bem-bl.git"
+    },
+    "main": "index"
+}
