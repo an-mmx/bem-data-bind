@@ -416,7 +416,8 @@
                 Object.keys(this.props).forEach(function (key) {
                     BD.getBinding(name + '.' + key).set(value[key] === undefined ? null : value[key], silent);
                 });
-            } else if (!silent) {
+            }
+            if (!silent) {
                 this.trigger();
                 while ((idx = name.lastIndexOf('.')) > 0) {
                     name = name.slice(0, idx);
