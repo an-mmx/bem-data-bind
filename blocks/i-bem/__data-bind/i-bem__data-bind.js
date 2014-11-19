@@ -346,9 +346,8 @@
             // before adding new property to ns, set current value to new binding
             if (!this.props[name]) {
                 BD.getBinding(this.name + '.' + name).set(this.get(name), true);
-                this.props[name] = 0;
+                this.props[name] = true;
             }
-            this.props[name] ++;
         },
 
         /**
@@ -357,10 +356,7 @@
          * @param {String} name Property name
          */
         removeProp: function (name) {
-            this.props[name] --;
-            if (!this.props[name]) {
-                delete this.props[name];
-            }
+            delete this.props[name];
         },
 
         /**
